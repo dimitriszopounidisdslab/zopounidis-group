@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zopounidis Group | From data to defensible decisions</title>
+<meta name="description" content="Zopounidis Group brings together Zopounidis Analytics & Advisory, the Crete Aviation Observatory and Aviationlife.gr: research-led analytics for aviation, tourism and the organisations that depend on them.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zopounidis Group">
+<meta property="og:description" content="From data to defensible decisions. Research-led analytics and advisory, founded by Dimitris Zopounidis.">
+<meta property="og:url" content="https://dimitriszopounidisdslab.github.io/zopounidis-group/">
+<meta property="og:image" content="https://dimitriszopounidisdslab.github.io/zopounidis-group/assets/img/og-image.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Serif:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#0B0E13; --graphite:#1F2124; --steel:#5C6670; --mist:#8A93A3; --ice:#9FB4C7;
+  --paper:#FAF8F4; --white:#FFFFFF; --rule:#E2DED6; --link:#2F4A63;
+  --serif:"IBM Plex Serif",Georgia,serif; --sans:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--graphite);font-family:var(--sans);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:var(--link);text-underline-offset:3px}
+a:hover{color:var(--ink)}
+img{max-width:100%;display:block}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:16px;top:16px;background:var(--ink);color:var(--paper);padding:8px 12px;z-index:10}
+:focus-visible{outline:2px solid var(--link);outline-offset:3px}
+.label{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--steel)}
+
+header.site{border-bottom:1px solid var(--rule)}
+header.site .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-top:22px;padding-bottom:22px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--ink)}
+.brand img{height:42px;width:auto}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 26px}
+nav a{font-family:var(--mono);font-size:13px;letter-spacing:.06em;color:var(--graphite);text-decoration:none;display:inline-block;padding:10px 0}
+nav a:hover{color:var(--link);text-decoration:underline}
+
+.hero{padding:112px 0 96px}
+.hero h1{font-family:var(--serif);font-weight:700;font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.06;letter-spacing:-.01em;margin:22px 0 28px;color:var(--ink);max-width:14ch}
+.hero p.lede{font-size:clamp(1.05rem,1.6vw,1.25rem);max-width:58ch;margin:0;color:var(--graphite)}
+.hero .meta{margin-top:40px;display:flex;flex-wrap:wrap;gap:8px 28px}
+
+section{border-top:1px solid var(--rule);padding:88px 0}
+.sec-head{display:grid;grid-template-columns:minmax(0,1fr);gap:14px;margin-bottom:48px}
+.sec-head h2{font-family:var(--serif);font-weight:600;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1.2;margin:0;color:var(--ink);max-width:28ch}
+.sec-head p{margin:0;max-width:62ch;color:var(--steel)}
+
+.ventures{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.venture{background:var(--white);border:1px solid var(--rule);display:flex;flex-direction:column}
+.venture .mark{display:flex;align-items:center;gap:16px;padding:24px 24px 0}
+.venture .mark img{width:64px;height:64px;border:1px solid var(--rule)}
+.venture .body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:12px;flex-grow:1}
+.venture h3{font-family:var(--serif);font-weight:600;font-size:1.3rem;line-height:1.3;margin:0;color:var(--ink)}
+.venture p{margin:0;font-size:.98rem;flex-grow:1}
+.venture a.more{font-family:var(--mono);font-size:13px;letter-spacing:.04em;padding:10px 0 0;display:inline-block}
+
+.principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border-top:1px solid var(--rule)}
+.principle{padding:28px 28px 28px 0;border-bottom:1px solid var(--rule)}
+.principle .num{font-family:var(--mono);font-size:12px;color:var(--steel);letter-spacing:.12em}
+.principle h3{font-family:var(--serif);font-weight:600;font-size:1.15rem;margin:10px 0 8px;color:var(--ink)}
+.principle p{margin:0;font-size:.96rem;color:var(--graphite)}
+
+.research{display:flex;flex-wrap:wrap;gap:48px}
+.research .col{flex:1 1 320px;min-width:0}
+.research h3{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--steel);margin:0 0 16px}
+.list{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.list li{padding:14px 0;border-bottom:1px solid var(--rule)}
+.list li span{display:block;font-size:.9rem;color:var(--steel)}
+
+.founder{display:flex;flex-wrap:wrap;gap:48px}
+.founder .who{flex:1 1 260px}
+.founder .bio{flex:999 1 520px;min-width:0}
+.founder h3{font-family:var(--serif);font-weight:600;font-size:1.6rem;margin:0 0 6px;color:var(--ink)}
+.founder .bio p{margin:0 0 16px;max-width:66ch}
+.links{display:flex;flex-wrap:wrap;gap:4px 24px;font-family:var(--mono);font-size:13px}
+.links a{display:inline-block;padding:10px 0}
+
+footer.site{background:var(--ink);color:#C3C9D2}
+footer.site .wrap{padding-top:64px;padding-bottom:48px;display:flex;flex-direction:column;gap:32px}
+footer .top{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-start;gap:32px}
+footer img.wm{height:50px;width:auto}
+footer .contact{font-family:var(--mono);font-size:14px;line-height:1.9}
+footer .contact a{color:#E9EDF2}
+footer .contact a:hover{color:var(--ice)}
+footer .note{font-size:.88rem;color:var(--mist);max-width:80ch;border-top:1px solid #222831;padding-top:24px}
+@media (max-width:640px){.hero{padding:72px 0 64px}section{padding:64px 0}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="./" aria-label="Zopounidis Group, home"><img src="assets/brand/zopounidis-group-wordmark-ink.svg" alt="Zopounidis Group"></a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#ventures">Ventures</a></li>
+        <li><a href="#approach">Approach</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#founder">Founder</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <div class="hero">
+    <div class="wrap">
+      <div class="label">Zopounidis Group | Chania, Crete</div>
+      <h1>From data to defensible decisions.</h1>
+      <p class="lede">Zopounidis Group brings together three ventures founded by Dimitris Zopounidis: a business analytics and data science advisory firm, an aviation intelligence observatory for Crete and the Mediterranean, and a platform for data-driven aviation research. Each operates independently. What they share is a method: quantitative evidence, explicit assumptions, and analysis built around the decision it has to inform.</p>
+      <div class="meta">
+        <span class="label">Business analytics</span>
+        <span class="label">Aviation intelligence</span>
+        <span class="label">Decision analysis</span>
+      </div>
+    </div>
+  </div>
+
+  <section id="ventures" aria-labelledby="ventures-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label">01 | Ventures</div>
+        <h2 id="ventures-title">Three ventures, one standard of evidence.</h2>
+      </div>
+      <div class="ventures">
+        <article class="venture">
+          <div class="mark"><img src="assets/img/zaa-square.jpg" alt="Zopounidis Analytics &amp; Advisory logo"></div>
+          <div class="body">
+            <div class="label">Advisory</div>
+            <h3>Zopounidis Analytics &amp; Advisory</h3>
+            <p>Business analytics and data science advisory. Decision-support models, performance measurement frameworks and analytical tools for organisations in infrastructure, utilities, finance and tourism.</p>
+            <a class="more" href="https://dimitriszopounidisdslab.github.io/zopounidis-analytics/">Visit ZAA →</a>
+          </div>
+        </article>
+        <article class="venture">
+          <div class="mark"><img src="assets/img/cao-square.jpg" alt="Crete Aviation Observatory logo"></div>
+          <div class="body">
+            <div class="label">Aviation intelligence</div>
+            <h3>Crete Aviation Observatory</h3>
+            <p>Aviation and tourism intelligence for Crete and the wider Mediterranean. Its monthly Aviation &amp; Tourism Intelligence Report covers route networks and connectivity, operator concentration and risk, aviation-to-tourism alignment, and the forward outlook, for airport, hotel and destination leadership.</p>
+            <a class="more" href="https://dimitriszopounidisdslab.github.io/cao_hub/">Visit CAO →</a>
+          </div>
+        </article>
+        <article class="venture">
+          <div class="mark"><img src="assets/img/aviationlife-square.jpg" alt="Aviationlife.gr logo"></div>
+          <div class="body">
+            <div class="label">Aviation research</div>
+            <h3>Aviationlife.gr</h3>
+            <p>Data-driven aviation insights and research. Analyses of airports, airlines, connectivity, aviation finance and sustainability, with dedicated coverage of the airports of Crete.</p>
+            <a class="more" href="https://aviationlife.gr/">Visit Aviationlife.gr →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" aria-labelledby="approach-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label">02 | Approach</div>
+        <h2 id="approach-title">How the work is done.</h2>
+      </div>
+      <div class="principles">
+        <div class="principle">
+          <div class="num">01</div>
+          <h3>Evidence first</h3>
+          <p>Conclusions follow from data that can be inspected and reproduced, not from assertion.</p>
+        </div>
+        <div class="principle">
+          <div class="num">02</div>
+          <h3>Explicit method</h3>
+          <p>Sources, assumptions and limitations are documented with every deliverable.</p>
+        </div>
+        <div class="principle">
+          <div class="num">03</div>
+          <h3>Decision orientation</h3>
+          <p>Analysis is framed around the decision it informs. Where objectives conflict, trade-offs are made visible through multi-criteria decision analysis.</p>
+        </div>
+        <div class="principle">
+          <div class="num">04</div>
+          <h3>Independence</h3>
+          <p>Each venture keeps its own mandate. Advisory engagements do not shape the Observatory's findings or the editorial content of Aviationlife.gr.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" aria-labelledby="research-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label">03 | Research</div>
+        <h2 id="research-title">Grounded in doctoral research.</h2>
+        <p>The Group's methods draw on research at the Data Science Laboratory, School of Production Engineering and Management, Technical University of Crete.</p>
+      </div>
+      <div class="research">
+        <div class="col">
+          <h3>Research themes</h3>
+          <ul class="list">
+            <li>Airport sustainability assessment</li>
+            <li>ESG and financial performance in air transport</li>
+            <li>Data-to-decision processes in organisations</li>
+            <li>Machine learning applications in aviation</li>
+            <li>Multiple criteria decision aiding</li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Recognition and affiliations</h3>
+          <ul class="list">
+            <li>SkyImpact Challenge 2026, 3rd Prize<span>"Door-to-Gate" project</span></li>
+            <li>EURO Working Group on Multiple Criteria Decision Aiding<span>Member</span></li>
+            <li>Artificial Intelligence and Applications in Management<span>Book</span></li>
+            <li>Data Science Laboratory, Technical University of Crete<span>Doctoral research</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="founder" aria-labelledby="founder-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="label">04 | Founder</div>
+      </div>
+      <div class="founder">
+        <div class="who">
+          <h3 id="founder-title">Dimitris Zopounidis</h3>
+          <div class="label">Founder</div>
+        </div>
+        <div class="bio">
+          <p>Dimitris Zopounidis is a PhD Candidate in Business Analytics and Data-to-Decision Strategy at the Data Science Laboratory, Technical University of Crete. His work combines business analytics, multiple criteria decision analysis and machine learning, with a focus on aviation, tourism and infrastructure.</p>
+          <p>He founded the Crete Aviation Observatory and Zopounidis Analytics &amp; Advisory, and publishes data-driven analyses on Aviationlife.gr.</p>
+          <div class="links">
+            <a href="https://www.linkedin.com/in/dimitriszopounidis/">LinkedIn →</a>
+            <a href="https://dimitriszopounidisdslab.github.io/dzopounidis.github.io/">Scientific portfolio →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site" id="contact">
+  <div class="wrap">
+    <div class="top">
+      <img class="wm" src="assets/brand/zopounidis-group-wordmark-paper.svg" alt="Zopounidis Group">
+      <div class="contact">
+        <a href="mailto:zopounidis.analytics@gmail.com">zopounidis.analytics@gmail.com</a><br>
+        Chania, Crete, Greece
+      </div>
+    </div>
+    <p class="note">Zopounidis Group is the collective name for the ventures founded by Dimitris Zopounidis. It is not a separate legal entity; each venture operates under its own name and terms. © 2026</p>
+  </div>
+</footer>
+</body>
+</html>
